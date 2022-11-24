@@ -1,0 +1,31 @@
+package br.com.zavala;
+
+import java.util.Scanner;
+
+/**
+ * 
+ * @author Ramiro
+ *
+ * Tarefa Modulo 9 - Wrapers.
+ * Declarar uma variável primitiva. Receber um valor para ela
+ * via console. Fazer a conversão para o tipo wraper que corresponde.
+ * Imprimir no console o valor da nova variável do tipo wraper.
+ */
+public class TarefaWrapers {
+
+	public static void main(String[] args) {
+	
+		Scanner s = new Scanner(System.in);
+	    System.out.println("Digite um valor inteiro : ");
+	    int valorPrimitivo = s.nextInt();
+	    
+	    //atribuindo um valor primitivo para uma variável wraper
+	    Integer valorWraper = valorPrimitivo;
+	    System.out.println("Valor wraper : " + valorWraper.toString());
+	    
+	    //Uma das vantagens dos wrapers é que tem métodos atrelados que podemos usar
+	    System.out.println("Potência 2 do número : " + valorWraper.sum(2, 3));
+
+	}
+
+}
